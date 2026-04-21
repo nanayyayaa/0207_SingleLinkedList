@@ -103,3 +103,18 @@ public:
         else
         {
             cout << "\nData di dalam list adalah:\n";
+            Node *currentNode = START;
+
+            while (currentNode != NULL)
+            {
+                cout << currentNode->noMhs << endl;
+                currentNode = currentNode->next;
+            }
+            cout << endl;
+        }
+    }
+};
+
+int main()
+{
+    LinkedList mhs;
